@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import styles from './Item.module.css';
 import { BsStarFill, BsHeart } from 'react-icons/bs';
+import swal from 'sweetalert';
 
 import useAuth from '../../../hooks/useAuth';
 const Item = (props) => {
@@ -10,14 +11,20 @@ const Item = (props) => {
   // items when clicked
   const handleItems = (id) => {
     const selectedItem = items.find((item) => item.id === id);
-    const quantity = {
-      ...selectedItem,
-      // sending 1 as quantify when item is clicked once
-      quantity: 1,
-    };
-    //saving the order with quantity
-    const newOrder = [...orders, quantity];
-    setOrders(newOrder);
+    const found = orders.find((order) => order.id === id);
+    if (found) {
+      swal('Item already added!');
+    } else {
+      const quantity = {
+        ...selectedItem,
+        // sending 1 as quantify when item is clicked once
+        quantity: 1,
+      };
+      //saving the order with quantity
+      const newOrder = [...orders, quantity];
+      setOrders(newOrder);
+      swal('Thank you!', 'Item added to cart!', 'success');
+    }
   };
 
   return (

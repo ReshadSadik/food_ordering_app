@@ -1,4 +1,3 @@
-import React, { useEffect, useState } from 'react';
 import { BsClockFill } from 'react-icons/bs';
 import { Link } from 'react-router-dom';
 import useAuth from '../../../hooks/useAuth';
