@@ -1,0 +1,74 @@
+[
+  {
+    "id": 1,
+    "name": "Cabage Salad",
+    "price": 4.99,
+    "weight": 250,
+    "rating": 4.2,
+    "img": "../src/images/breakfast1.png",
+    "bg": "#ffe9f7"
+  },
+  {
+    "id": 2,
+    "name": "Noodie Salad",
+    "price": 4.99,
+    "weight": 250,
+    "rating": 4.2,
+    "img": "../src/images/breakfast1.png",
+    "bg": "#fff3ea"
+  },
+  {
+    "id": 3,
+    "name": "Vegetable Mix",
+    "price": 4.99,
+    "weight": 250,
+    "rating": 4.2,
+    "img": "../src/images/breakfast1.png",
+    "bg": "#e8fffe"
+  },
+  {
+    "id": 4,
+    "name": "Seafood Soup",
+    "price": 4.99,
+    "weight": 250,
+    "rating": 4.2,
+    "img": "../src/images/breakfast1.png",
+    "bg": "#e8f7ff"
+  },
+  {
+    "id": 5,
+    "name": "Bean Soup",
+    "price": 4.99,
+    "weight": 250,
+    "rating": 4.2,
+    "img": "../src/images/breakfast1.png",
+    "bg": "#f7ffea"
+  },
+  {
+    "id": 6,
+    "name": "Stewed Vegetables",
+    "price": 4.99,
+    "weight": 250,
+    "rating": 4.2,
+    "img": "../src/images/breakfast1.png",
+    "bg": "#ecf1ff"
+  },
+  {
+    "id": 7,
+    "name": "Chicken Soup",
+    "price": 4.99,
+    "weight": 250,
+    "rating": 4.2,
+    "img": "../src/images/breakfast1.png",
+    "bg": "#ffe9ea"
+  },
+  {
+    "id": 8,
+    "name": "kmn asan",
+    "price": 4.99,
+    "weight": 250,
+    "rating": 4.2,
+    "img": "../src/images/breakfast1.png",
+    "bg": "#fffde9"
+  }
+]

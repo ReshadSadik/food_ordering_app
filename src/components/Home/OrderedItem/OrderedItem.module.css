@@ -1,0 +1,54 @@
+.inputContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 2px solid #49d893;
+  border-radius: 20px;
+  width: 60px;
+  height: 23px;
+  cursor: pointer;
+}
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+.arrowBtn {
+  border-radius: 50%;
+  height: 10px;
+  line-height: 6px;
+  border: none;
+  background-color: white;
+  font-weight: bold;
+  /* padding: 0 6px; */
+}
+.arrowBtn:hover {
+  color: #49d893;
+}
+.title {
+  text-align: start;
+}
+.title span {
+  font-size: 14px;
+  margin: 0;
+  font-weight: bold;
+  color: rgba(128, 128, 128, 0.356);
+}
+.title h6 {
+  margin: 0;
+  font-weight: bolder;
+  height: 15px;
+}
+
+.input {
+  width: 14px;
+  height: 18px;
+  font-size: 14px;
+  outline: transparent;
+  border: transparent;
+}
+.price {
+  font-weight: bold;
+  margin: 0;
+  width: 50px;
+}
