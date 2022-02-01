@@ -3,8 +3,26 @@
   padding: 10px;
   border-radius: 12px;
   cursor: pointer;
+  position: relative;
+  overflow: hidden;
 }
-.card:hover {
+.card::after {
+  content: 'add to cart';
+  width: 50%;
+  height: 30px;
+  border-radius: 10px 0 0 10px;
+  background-color: #49d893;
+  position: absolute;
+  color: white;
+  font-weight: bold;
+  bottom: 0;
+  right: 0;
+  z-index: 9;
+  transform: translateX(130px);
+  transition: 0.3s;
+}
+.card:hover::after {
+  transform: translateX(0);
 }
 .card:hover img {
   transform: scale(1.2);

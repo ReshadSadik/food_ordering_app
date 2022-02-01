@@ -1,10 +1,6 @@
 import React from 'react';
 import { Col, Container, Row } from 'react-bootstrap';
 import { Outlet } from 'react-router-dom';
-import Checkout from '../../Checkout/Checkout';
-import Menu from '../../Menu/Menu';
-import Items from '../Items/Items';
-import Orders from '../Orders/Orders';
 import Sidenav from '../Sidenav/Sidenav';
 
 const Home = () => {
@@ -22,25 +18,11 @@ const Home = () => {
           >
             <Sidenav></Sidenav>
           </Col>
-          {/* <Col sm={7} className="bg-white ">
-            <Items></Items>
-          </Col>
-
-          <Col sm={3} className="bg-white rounded">
-            <Orders></Orders>
-          </Col> */}
           <Col sm={10} className="bg-white rounded">
-            {/* <Orders></Orders> */}
-            {/* <Menu></Menu> */}
-            {/* <Checkout></Checkout> */}
             <Outlet></Outlet>
           </Col>
         </Row>
       </Container>
-
-      {/* <div>
-        <Orders></Orders>
-      </div> */}
     </div>
   );
 };
