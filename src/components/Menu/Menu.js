@@ -8,11 +8,11 @@ const Menu = () => {
   return (
     <div>
       <Row>
-        <Col sm={8} className="bg-white ">
+        <Col xxl={8} xl={8} lg={12} className="bg-white ">
           <Items></Items>
         </Col>
 
-        <Col sm={4} className="bg-white rounded">
+        <Col xxl={4} xl={4} lg={12} className="bg-white rounded">
           <Orders></Orders>
         </Col>
       </Row>

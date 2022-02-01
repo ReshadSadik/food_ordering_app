@@ -26,8 +26,7 @@ const OrderedItem = (props) => {
     <div>
       <div className="d-flex my-5 align-items-center   justify-content-between">
         <img
-          width={35}
-          height={35}
+          className={styles.orderImg}
           src="https://raw.githubusercontent.com/ReshadSadik/Delicious-resturant/main/src/images/Breakfast/breakfast1.png"
           alt=""
         />
@@ -66,7 +65,7 @@ const OrderedItem = (props) => {
             onClick={() => {
               cancelOrders(id);
             }}
-            className="h-2 bg-white border-0 text-danger"
+            className={styles.close}
           >
             X
           </button>

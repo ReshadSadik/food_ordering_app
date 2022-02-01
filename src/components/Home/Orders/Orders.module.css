@@ -11,9 +11,9 @@
   background-color: #49d89305;
 }
 .orders {
-  margin-top: 60px;
+  margin-top: 40px;
   padding: 0 20px;
-  height: 750px;
+  height: 720px;
 }
 .checkoutBtn {
   width: 100%;
@@ -31,4 +31,20 @@
   height: 350px;
   overflow-y: auto;
   margin: 30px 0;
+}
+@media screen and (max-width: 1600px) {
+  .orders {
+    margin-top: 30px;
+    padding: 0px;
+  }
+}
+
+@media screen and (max-width: 1400px) {
+  .orderList {
+    height: 300px;
+    margin: 20px 0;
+  }
+  .orders {
+    height: 658px;
+  }
 }

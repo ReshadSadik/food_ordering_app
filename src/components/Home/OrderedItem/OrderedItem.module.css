@@ -4,7 +4,7 @@
   justify-content: center;
   border: 2px solid #49d893;
   border-radius: 20px;
-  width: 60px;
+  width: 70px;
   height: 23px;
   cursor: pointer;
 }
@@ -41,7 +41,7 @@ input::-webkit-inner-spin-button {
 }
 
 .input {
-  width: 14px;
+  width: 18px;
   height: 18px;
   font-size: 14px;
   outline: transparent;
@@ -51,4 +51,30 @@ input::-webkit-inner-spin-button {
   font-weight: bold;
   margin: 0;
   width: 50px;
+  font-size: 16px;
+}
+.close {
+  border: transparent;
+  background-color: white;
+  font-size: 16px;
+  color: red;
+  cursor: pointer;
+}
+.orderImg {
+  width: 50px;
+}
+@media screen and (max-width: 1400px) {
+  .orderImg {
+    width: 40px;
+  }
+  .title h6 {
+    font-size: 14px;
+  }
+  .price {
+    width: 40px;
+    font-size: 13px;
+  }
+  .close {
+    font-size: 13px;
+  }
 }

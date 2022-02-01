@@ -8,7 +8,7 @@ import Checkout from './components/Checkout/Checkout';
 
 function App() {
   return (
-    <div className="App p-5 " style={{ backgroundColor: '#f0f5ff' }}>
+    <div className="App" style={{ backgroundColor: '#f0f5ff' }}>
       <AuthProvider>
         <BrowserRouter>
           <Routes>

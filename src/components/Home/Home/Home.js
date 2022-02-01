@@ -2,13 +2,11 @@ import React from 'react';
 import { Col, Container, Row } from 'react-bootstrap';
 import { Outlet } from 'react-router-dom';
 import Sidenav from '../Sidenav/Sidenav';
+import styles from './Home.module.css';
 
 const Home = () => {
   return (
-    <div
-      className=" d-flex align-items-center gap-0 px-5"
-      style={{ height: '90vh' }}
-    >
+    <div className={styles.home}>
       <Container fluid>
         <Row className="">
           <Col

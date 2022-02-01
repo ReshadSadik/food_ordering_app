@@ -9,7 +9,7 @@ const stylo = {
 const Sidenav = () => {
   return (
     <div>
-      <div style={{ height: '60vh' }}>
+      <div style={{}}>
         <div className={styles.sidenav}>
           <NavLink
             to="/"

@@ -34,3 +34,8 @@
 .sidenav {
   margin-top: 50px;
 }
+@media screen and (max-width: 1600px) {
+  .btn {
+    padding: 15px 50px;
+  }
+}

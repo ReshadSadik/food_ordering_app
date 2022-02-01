@@ -1,5 +1,6 @@
 .App {
   text-align: center;
+  padding: 80px;
 }
 body {
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen,
@@ -37,5 +38,11 @@ body {
   }
   to {
     transform: rotate(360deg);
+  }
+}
+
+@media screen and (max-width: 1400px) {
+  .App {
+    padding: 40px;
   }
 }

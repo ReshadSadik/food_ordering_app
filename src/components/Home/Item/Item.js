@@ -36,7 +36,7 @@ const Item = (props) => {
       className={styles.card}
     >
       <div className="d-flex justify-content-between rounded-xl">
-        <div className="d-flex align-items-center bg-black text-white rounded-pill px-2 fs-6">
+        <div className={styles.rating}>
           <BsStarFill
             className="text-warning me-1"
             style={{ width: '13px' }}
@@ -49,14 +49,12 @@ const Item = (props) => {
         </div>
       </div>
       <img
-        className="mt-3"
         src="https://raw.githubusercontent.com/ReshadSadik/Delicious-resturant/main/src/images/Breakfast/breakfast1.png"
-        width="80px"
         alt=""
       />
 
       <div>
-        <h4 className="text-start fs-6 fw-regular mt-3">
+        <h4 className={styles.title}>
           {name}{' '}
           <span className={styles.weight} style={{ color: 'black' }}>
             {weight}g

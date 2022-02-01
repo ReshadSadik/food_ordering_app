@@ -27,8 +27,25 @@
 .card:hover img {
   transform: scale(1.2);
 }
+.rating {
+  display: flex;
+  align-items: center;
+  background-color: black;
+  color: white;
+  border-radius: 25px;
+  padding: 0 8px;
+  font-size: 14px;
+  height: 25px;
+}
+.title {
+  text-align: start;
+  font-size: 16px;
+  margin: 10px 0;
+}
 img {
   transition: 1s all;
+  width: 80px;
+  margin-top: 10px;
 }
 .price {
   margin: 0;
@@ -41,4 +58,22 @@ img {
   padding: 0 5px;
   border-radius: 6px;
   font-size: small;
+}
+
+@media screen and (max-width: 1400px) {
+  .card {
+    width: 200px;
+  }
+  img {
+    width: 70px;
+    margin-top: 0px;
+  }
+  .rating {
+    height: 25px;
+    font-size: 10px;
+  }
+  .title {
+    font-size: 14px;
+    margin: 15px 0;
+  }
 }
