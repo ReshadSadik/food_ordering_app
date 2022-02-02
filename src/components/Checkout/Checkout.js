@@ -2,8 +2,11 @@ import React from 'react';
 import useAuth from '../../hooks/useAuth';
 import OrderedItem from '../Home/OrderedItem/OrderedItem';
 import chefImg from '../../images/chef.png';
-import { Col, Container, Row } from 'react-bootstrap';
+import { Col, Row } from 'react-bootstrap';
 import styles from './Checkout.module.css';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
+AOS.init();
 const Checkout = () => {
   const { orders } = useAuth();
   let newTotal = 0;
@@ -28,7 +31,7 @@ const Checkout = () => {
           </Col>
 
           <Col sm={5} className="bg-white rounded">
-            <div>
+            <div data-aos="zoom-in">
               <img className={styles.checkoutImg} src={chefImg} alt="" />
             </div>
           </Col>

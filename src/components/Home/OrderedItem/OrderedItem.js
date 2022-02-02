@@ -1,7 +1,10 @@
 import React, { useState } from 'react';
 import useAuth from '../../../hooks/useAuth';
 import styles from './OrderedItem.module.css';
-
+import AOS from 'aos';
+import 'aos/dist/aos.css'; // You can also use <link> for styles
+// ..
+AOS.init();
 const OrderedItem = (props) => {
   const { name, price, weight, img, rating, quantity, id } = props.order;
   const { orders, setOrders, updatedQuantity, setUpdatedQuantity } = useAuth();
@@ -23,7 +26,7 @@ const OrderedItem = (props) => {
     setOrders(removedList);
   };
   return (
-    <div>
+    <div data-aos="fade-down">
       <div className="d-flex my-5 align-items-center   justify-content-between">
         <img
           className={styles.orderImg}

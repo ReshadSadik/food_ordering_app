@@ -3,6 +3,10 @@ import { Link } from 'react-router-dom';
 import useAuth from '../../../hooks/useAuth';
 import OrderedItem from '../OrderedItem/OrderedItem';
 import styles from './Orders.module.css';
+import AOS from 'aos';
+import 'aos/dist/aos.css'; // You can also use <link> for styles
+// ..
+AOS.init();
 const Orders = () => {
   const { orders } = useAuth();
   let newTotal = 0;
@@ -10,11 +14,11 @@ const Orders = () => {
   orders.map((order) => (newTotal = newTotal + order.price * order.quantity));
 
   return (
-    <div className={styles.orders}>
+    <div data-aos="fade-down" className={styles.orders}>
       <div className="mb-5">
         <div className="d-flex justify-content-between fw-bold align-items-center ">
           <h4>My Order</h4>
-          <p>Edit</p>
+          <p style={{ color: '#49d893' }}>Edit</p>
         </div>
         <p className="text-start fw-bold">
           <BsClockFill

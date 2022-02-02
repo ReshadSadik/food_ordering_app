@@ -2,10 +2,8 @@ import React from 'react';
 import { Button } from 'react-bootstrap';
 import { NavLink } from 'react-router-dom';
 import styles from './Sidenav.module.css';
-const stylo = {
-  backgroundColor: 'red',
-  fontSize: '40px',
-};
+import { BiFoodMenu, BiCheckCircle } from 'react-icons/bi';
+
 const Sidenav = () => {
   return (
     <div>
@@ -20,6 +18,7 @@ const Sidenav = () => {
               backgroundColor: isActive ? 'white' : '#49d893',
             })}
           >
+            <BiFoodMenu></BiFoodMenu>
             Menu
           </NavLink>
           <NavLink
@@ -31,6 +30,7 @@ const Sidenav = () => {
               backgroundColor: isActive ? 'white' : '#49d893',
             })}
           >
+            <BiCheckCircle></BiCheckCircle>
             Checkout
           </NavLink>
         </div>

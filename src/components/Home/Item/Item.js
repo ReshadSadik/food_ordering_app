@@ -4,6 +4,10 @@ import { BsStarFill, BsHeart } from 'react-icons/bs';
 import swal from 'sweetalert';
 
 import useAuth from '../../../hooks/useAuth';
+import AOS from 'aos';
+import 'aos/dist/aos.css'; // You can also use <link> for styles
+// ..
+AOS.init();
 const Item = (props) => {
   const { name, img, price, color, id, bg, weight } = props.item;
   const { orders, setOrders, items } = useAuth();
@@ -29,6 +33,7 @@ const Item = (props) => {
 
   return (
     <div
+      data-aos="flip-left"
       onClick={() => {
         handleItems(id);
       }}
