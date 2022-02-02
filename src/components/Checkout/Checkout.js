@@ -10,7 +10,6 @@ AOS.init();
 const Checkout = () => {
   const { orders } = useAuth();
   let newTotal = 0;
-
   orders.map((order) => (newTotal = newTotal + order.price * order.quantity));
   return (
     <div style={{}}>

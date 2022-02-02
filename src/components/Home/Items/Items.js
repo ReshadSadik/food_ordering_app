@@ -1,4 +1,3 @@
-import React, { useEffect, useState } from 'react';
 import useAuth from '../../../hooks/useAuth';
 import Item from '../Item/Item';
 import AOS from 'aos';
@@ -6,7 +5,7 @@ import 'aos/dist/aos.css'; // You can also use <link> for styles
 // ..
 AOS.init();
 const Items = () => {
-  const { items, setItems } = useAuth();
+  const { items } = useAuth();
   return (
     <div
       data-aos="fade-right"

@@ -1,11 +1,10 @@
-import React, { useState } from 'react';
 import styles from './Item.module.css';
 import { BsStarFill, BsHeart } from 'react-icons/bs';
 import swal from 'sweetalert';
 
 import useAuth from '../../../hooks/useAuth';
 const Item = (props) => {
-  const { name, img, price, color, id, bg, weight } = props.item;
+  const { name, img, price, color, id, bg, weight, rating } = props.item;
   const { orders, setOrders, items } = useAuth();
 
   // items when clicked
@@ -41,17 +40,14 @@ const Item = (props) => {
             className="text-warning me-1"
             style={{ width: '13px' }}
           ></BsStarFill>
-          4.2
+          {rating}
         </div>
 
         <div className="bg-white rounded-circle px-2 py-1">
           <BsHeart></BsHeart>
         </div>
       </div>
-      <img
-        src="https://raw.githubusercontent.com/ReshadSadik/Delicious-resturant/main/src/images/Breakfast/breakfast1.png"
-        alt=""
-      />
+      <img src={img} alt="" />
 
       <div>
         <h4 className={styles.title}>

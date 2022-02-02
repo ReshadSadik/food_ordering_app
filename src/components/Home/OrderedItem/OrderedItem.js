@@ -6,7 +6,7 @@ import 'aos/dist/aos.css'; // You can also use <link> for styles
 // ..
 AOS.init();
 const OrderedItem = (props) => {
-  const { name, price, weight, img, rating, quantity, id } = props.order;
+  const { name, price, weight, img, quantity, id } = props.order;
   const { orders, setOrders, updatedQuantity, setUpdatedQuantity } = useAuth();
   const [updatedPrice, setUpdatedPrice] = useState(price);
   const ordered = orders.find((order) => order.id === id);
@@ -28,11 +28,7 @@ const OrderedItem = (props) => {
   return (
     <div data-aos="fade-down">
       <div className="d-flex my-5 align-items-center   justify-content-between">
-        <img
-          className={styles.orderImg}
-          src="https://raw.githubusercontent.com/ReshadSadik/Delicious-resturant/main/src/images/Breakfast/breakfast1.png"
-          alt=""
-        />
+        <img className={styles.orderImg} src={img} alt="" />
         <div className={styles.title}>
           <h6 className="">{name}</h6>
           <span className="">{weight}g</span>
