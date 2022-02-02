@@ -10,13 +10,14 @@ const Home = () => {
       <Container fluid>
         <Row className="">
           <Col
-            sm={2}
+            lg={2}
+            sm={12}
             className=" rounded  p-0"
             style={{ backgroundColor: '#49d893' }}
           >
             <Sidenav></Sidenav>
           </Col>
-          <Col sm={10} className="bg-white rounded">
+          <Col lg={10} sm={12} className="bg-white rounded">
             <Outlet></Outlet>
           </Col>
         </Row>

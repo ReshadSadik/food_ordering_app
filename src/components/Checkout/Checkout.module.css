@@ -12,4 +12,22 @@
   overflow-y: auto;
   height: 450px;
   margin: 14px 0;
+  margin-left: 80px;
+}
+.checkoutImg {
+  width: 70%;
+  margin-left: 60px;
+}
+
+@media screen and (max-width: 500px) {
+  .proceedBtn {
+    width: 50%;
+  }
+  .checkoutOrders {
+    margin-left: 0px;
+  }
+  .checkoutImg {
+    width: 70%;
+    margin-left: 0px;
+  }
 }
