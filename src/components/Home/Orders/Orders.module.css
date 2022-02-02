@@ -1,7 +1,7 @@
 .dragdrop {
   border: 2px dotted #49d893;
   border-radius: 10px;
-  margin-bottom: 40px;
+  margin-bottom: 30px;
   width: 100%;
 }
 .dragdrop h4 {
@@ -29,7 +29,7 @@
   left: 0;
 }
 .orderList {
-  height: 350px;
+  height: 360px;
   overflow-y: auto;
   margin: 30px 0;
 }

@@ -27,7 +27,7 @@ const OrderedItem = (props) => {
   };
   return (
     <div data-aos="fade-down">
-      <div className="d-flex my-5 align-items-center   justify-content-between">
+      <div className="d-flex my-4 align-items-center   justify-content-between">
         <img className={styles.orderImg} src={img} alt="" />
         <div className={styles.title}>
           <h6 className="">{name}</h6>

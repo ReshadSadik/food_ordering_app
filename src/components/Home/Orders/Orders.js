@@ -39,7 +39,7 @@ const Orders = () => {
           <h4>Drag&#38;Drop</h4>
         </div>
         <div className="d-flex justify-content-between  fw-bold">
-          <h4>Total</h4>
+          <h5>Total</h5>
           <p>${newTotal.toFixed(2)}</p>
         </div>
         <Link to="/checkout">
